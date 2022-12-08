@@ -18,7 +18,7 @@ public class Invoice {
 
     // calculate total amount
     public double calculateTotalAmount() {
-        double price = ((book.price - book.price * discountRate) * this.quantity);
+        double price = ((book.price - (book.price * discountRate)) * this.quantity);
 
         double priceWithTaxes = price * (1 + taxRate);
 
